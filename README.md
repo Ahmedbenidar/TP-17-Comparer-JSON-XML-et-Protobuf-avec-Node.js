@@ -1,8 +1,5 @@
 # TP 17 - Comparer JSON, XML et Protobuf avec Node.js
 
-Ce projet compare trois facons de serialiser les memes donnees avec Node.js : le texte JSON, le texte XML et le binaire Protocol Buffers. Un meme jeu de collaborateurs est encode dans les trois formats, ecrit sur disque, puis mesure en taille, en compression et en temps d'encodage comme de decodage.
-
-Le jeu de donnees est personnalise : douze noms, huit villes marocaines, un salaire mensuel et un indicateur de teletravail. Le projet est une migration de plateforme de facturation, ce qui change des exemples generiques du cours.
 
 ## Structure du projet
 
@@ -74,10 +71,3 @@ Le JSON et le XML restent lisibles a l'oeil nu, ce qui aide au debogage. Le bina
 
 Les tailles affichees par le script correspondent exactement a celles des fichiers sur le disque. Un meme contenu metier occupe donc trois volumes tres differents selon le format choisi.
 
-## Conclusion
-
-Protobuf n'est pas seulement plus petit, il devient aussi plus rapide que le XML des que le volume augmente. JSON garde l'avantage de la simplicite et de la lisibilite, ce qui explique qu'il reste le choix par defaut des API REST. Pour de la communication entre microservices a forte volumetrie, comme dans un contexte gRPC, le binaire Protobuf s'impose naturellement.
-
-## Lancer le projet
-
-Il faut Node.js, puis installer les dependances et demarrer le script. Le resultat s'affiche directement dans le terminal et les fichiers apparaissent dans le dossier sortie.
