@@ -1,0 +1,24 @@
+{
+  "name": "tp17-benchmark-serialisation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Comparaison JSON, XML et Protobuf en Node.js (TP 17 - Architecture Microservices)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "benchmark": "node index.js"
+  },
+  "keywords": [
+    "protobuf",
+    "json",
+    "xml",
+    "serialisation",
+    "node"
+  ],
+  "author": "Ahmed Benidar",
+  "license": "MIT",
+  "dependencies": {
+    "protobufjs": "^7.6.6",
+    "xml-js": "^1.6.11"
+  }
+}

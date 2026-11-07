@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package tp17.formats.v1;
+
+message Collaborateur {
+  int32 identifiant = 1;
+  string nom = 2;
+  string ville = 3;
+  int32 salaire_mensuel = 4;
+  bool teletravail = 5;
+}
+
+message Equipe {
+  string projet = 1;
+  repeated Collaborateur collaborateur = 2;
+}
